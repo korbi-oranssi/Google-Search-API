@@ -421,6 +421,7 @@ def _get_search_url(query, page=0, per_page=10, lang='en', area='com', ncr=False
         else:
             raise AreaError('invalid  name,  no area found')
         url += params
+    print('search url: %s\n' % url)
     return url
 
 
