@@ -52,6 +52,24 @@ def _get_search_url(query, page=0, per_page=10, lang='en', area='com', ncr=False
     }
 
     #params = "hl=en&as_q=eesti&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=lang_et&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&as_rights="
+    params = {
+        'hl': 'en',
+        'as_q': query.encode('utf8'),
+        'as_epq': '',
+        'as_oq': '',
+        'as_eq': '',
+        'as_nlo': '',
+        'as_nhi': '',
+        'lr': 'lang_et',
+        'cr': '',
+        'as_qdr': '',
+        'as_sitesearch': '',
+        'as_occt': 'any',
+        'safe': 'images',
+        'as_filetype': '',
+        'as_rights': ''
+    }
+
 
     time_mapping = {
         'hour': 'qdr:h',
