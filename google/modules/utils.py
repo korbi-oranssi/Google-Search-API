@@ -55,6 +55,8 @@ def _get_search_url(query, page=0, per_page=10, lang='en', area='com', ncr=False
         'hl': 'en',
         'as_q': query.encode('utf8'),
         'lr': lang,
+        'start': page * per_page,
+        'num': per_page
     }
 
 
